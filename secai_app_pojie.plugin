@@ -4,10 +4,10 @@
 #!author= 
 #!icon= https://raw.githubusercontent.com/wint-0/image/main/%E4%B8%8B%E8%BD%BD.png
 
-[rewrite_local]
+[Script]
 
-^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/sc.js
+http-response ^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/sc.js, requires-body=true, timeout=10, tag=sc
 
-[mitm] 
+[MITM]
 
 hostname = buy.itunes.apple.com
