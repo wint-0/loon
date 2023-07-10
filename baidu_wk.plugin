@@ -1,0 +1,13 @@
+#!name= 百度文库
+#!desc= 破解
+#!homepage=
+#!author=
+#!icon= https://raw.githubusercontent.com/wint-0/image/main/wk.jpg
+
+[Script]
+
+http-response ^https:\/\/appwk\.baidu\.com\/naapi\/user\/getinfo script-path=https://github.com/deezertidal/private/raw/master/js-backup/Crack/baidulibrary.js, requires-body=true, timeout=10, tag=百度文库
+
+[Mitm]
+
+hostname = appwk.baidu.com
