@@ -1,0 +1,17 @@
+#!name= WPS-VIP
+#!desc= wps稻壳Vip和wps会员
+#!homepage=
+#!author=
+#!icon= https://raw.githubusercontent.com/wint-0/image/main/%E4%B8%8B%E8%BD%BD%20(1).png
+
+
+[Script]
+
+# wps稻壳Vip
+http-response ^https?:\/\/account\.wps\.cn\/api\/v3\/mine\/vips script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/WPSDocerVIPuserCrack.js, requires-body=true, timeout=10, tag=WPS稻壳VIP1
+http-request ^https?:\/\/.+\.(docer.)?wps.cn\/(user\/v1\/vip|android\/mb\/buy|download\/v1\/ios|partner\/invoke\/usable|(api|rank)\/v1(\/mobile\/mb)?\/detail) script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/WPSDocerVIPowerCrack.js, timeout=10, tag=WPS稻壳VIP2
+# wps会员
+http-response ^https?:\/\/.*?account\.wps\.(com|cn)(:\d+)?\/api\/users\/\w+\/overview$ script-path=https://raw.githubusercontent.com/I-am-R-E/Functional-Store-Hub/Master/WPSOffice/Script/WPS.js, requires-body=true, timeout=10, tag=WPS会员
+
+[mitm]
+hostname = *.docer.wps.cn, vipapi.wps.cn, account.wps.cn
