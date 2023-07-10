@@ -1,7 +1,7 @@
 #!name= Google重定向
 #!desc= Safari Google搜索重新定向google.com
 #!homepage=
-#!author= w1nt
+#!author= 
 #!icon= https://tc.w1nt.xyz/i/2023/07/10/qv6qv8-2.png
 
 [Rewrite]
